@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Test title</title>
+</head>
+<body>
+<p>
+    123
+</p>
+<h1>Заголовок 1</h1>
+<ul><li>point 1</li><li>point 2</li><li>point 3</li></ul>
+<h2>Заголовок 2</h2>
+<ol><li>point 1</li><li>point 2</li><li>point 3</li></ol>
+<h3>Заголовок 3</h3>
+
+<table border="1">
+    <tr><th colspan="2">Столбец 1</th></tr>
+    <tr><td>Строка 1</td><td>Строка 2</td></tr>
+</table><br />
+<table border="1">
+    <tr><th>Столбец 1</th><th>Столбец 2</th></tr>
+    <tr><td>Строка 1</td><td>Строка 2</td></tr>
+</table><br />
+<table border="1">
+    <tr><th rowspan="2">Столбец 1</th><th>Столбец 2</th></tr>
+    <tr><td>Строка 2</td></tr>
+</table><br />
+
+<h4>Заголовок 4</h4>
+
+<table border="1">
+    <tr>
+        <th>Движок</th>
+        <th>Разработчики</th>
+        <th>Браузер</th></tr>
+    <tr>
+        <td rowspan="4">Blink</td>
+        <td>Google</td>
+        <td rowspan="2">Google Chrome</td></tr>
+    <tr>
+        <td>Opera</td>
+    </tr>
+    <tr>
+        <td>Samsung</td>
+        <td rowspan="2">Opera 15+</td>
+    </tr>
+    <tr>
+        <td>Intel</td>
+    </tr>
+    <tr>
+        <td>Gecko</td>
+        <td>Netscape / Mozilla Foundation</td>
+        <td>Mozilla Firefox</td>
+    </tr>
+    <tr>
+        <td>EdgeHTML</td>
+        <td>Microsoft</td>
+        <td>Microsoft Edge</td>
+    </tr>
+</table><br />
+
+<h5>Заголовок 5</h5>
+
+<form action="/some.php" method="post">
+    <input type="radio" value="1" name="myRadio"> 123
+    <input type="radio" value="2" name="myRadio"> 456
+    <input type="radio" value="3" name="myRadio"> 789
+    <br>
+    <button type="submit">Отправить</button>
+</form>
+
+<h6>Заголовок 6</h6>
+<label for="clientName">Ваше имя</label>
+<input type="text" id="clientName" name="clientName" />
+<br>
+<label>
+    Ололо <input type="text" name="clientName" />
+</label>
+
+
+<p><a href="new.html" target="_blank">Открыть в новом окне</a></p>
+<p><img src="img/sample1.gif" alt="Гифка"/></p>
+
+<a target="_blank" href = "https://mountain.nsu.ru">СГТ НГУ</a>
+<span>123123</span><br /><span>123123</span>
+
+<hr/><br/>
+<hr/><br/>
+</body>
+</html>
