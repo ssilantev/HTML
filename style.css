@@ -1,15 +1,34 @@
+.content {
+    max-width: 356px;
+    margin: auto;
+}
+
+h1{
+    font-family: tahoma;
+    font-size: 43px;
+    color: rgb(50, 50, 120);
+    }
+
+h5{
+    color: #AA0000;
+}
+
 p{
-    color:red;
+    font-family: arial;
+    color: rgb(50, 50, 120);
+    font-style: italic;
 }
 table {
-    border: 4px double black; /* Параметры границы */
-    background: #fc3; /* Цвет фона */
-    padding: 10px; /* Поля вокруг текста */
-   }
-
-
-placeholder{
-   color:red;
+    width: 356px;
+}
+.hTable{
+    width: 100%;
+}
+::placeholder {
+    color: grey;
+    font-size: 12px;
+    font-style: italic;
+    font-family: math;
 }
 
 .checkbox-other {
@@ -19,58 +38,19 @@ placeholder{
     user-select: none;
     position: relative;
 }
-.checkbox-other input[type=checkbox] {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
-    display: block;
-    width: 0;
-    height: 0;
+button[type=reset] {
+  background-color: #333333;
+  border: none;
+  color: white;
+  padding: 8px 32px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
-.checkbox-other span {
-    display: inline-block;
-    position: relative;
-    padding: 0 0 0 35px;
-    line-height: 22px;
-}
-.checkbox-other span:before {
-    content: "";
-    display: inline-block;
-    width: 22px;
-    height: 22px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    transition: background 0.3s ease;
-    background: url(/upload2/checkbox-1.png) 0 0 no-repeat;
-}
-
-/* Checked */
-.checkbox-other input[type=checkbox]:checked + span:before {
-    background-image: url(/upload2/checkbox-2.png);
-}
-
-/* Focus */
-.focused span:before {
-    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
-}
-
-/* Hover */
-.checkbox-other span:hover:before {
-    filter: brightness(110%);
-}
-
-/* Active */
-.checkbox-other span:active:before {
-    filter: brightness(80%);
-}
-
-/* Disabled */
-.checkbox-other input[type=checkbox]:disabled + span {
-    color: #666;
-    cursor: default;
-}
-.checkbox-other input[type=checkbox]:disabled + span:before {
-    filter: grayscale(100%);
-    opacity: 0.6;
+button[type=submit]{
+  background-color: #AA0000;
+  border: none;
+  color: white;
+  padding: 8px 32px;
+  margin: 4px 2px;
+  cursor: pointer;
 }

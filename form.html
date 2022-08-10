@@ -5,39 +5,54 @@
     <title>Пойдем с нами!</title>
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
+<header>
+    <table class="hTable" width=100%>
+        <tr>
+            <th align="left">
+                Секция Горного Туризма НГУ
+            </th>
+            <th align="right">
+                <a href="https:\\mountain.nsu.ru">mountain.nsu.ru</a>
+            </th>
+        </tr>
+    </table>
+<hr>
+</header>
+
 <body>
+<div class="content">
 <h1>Пойдем с нами!</h1>
 <h5>* заполни, не ленись! </h5>
-<form>
-<p>Кто ты:</p>
-<table width="356">
+<form action="/join.php" method="post">
+<p>Кто ты?*</p>
+<table>
     <tr>
         <td>
             <label>
-                Имя*<br><input autofocus name="1stName" required placeholder="Иван"/>
+                Имя<br><input autofocus name="1stName" required placeholder="Иван"/>
             </label>
         </td>
         <td>
             <label>
-                Телефон*<br><input name="telNum" required placeholder="8-123-456-78-90"/>
+                Телефон<br><input name="telNum" required placeholder="8-123-456-78-90"/>
             </label>
         </td>
     </tr>
     <tr>
         <td>
             <label>
-                Фамилия*<br><input name="2ndName" required placeholder="Иванов"/>
+                Фамилия<br><input name="2ndName" required placeholder="Иванов"/>
             </label>
         </td>
         <td>
             <label>
-                E-mail*<br><input name="eMail" required placeholder="ivanov@mailserver.com"/>
+                E-mail<br><input name="eMail" required placeholder="ivanov@mailserver.com"/>
             </label>
         </td>
     </tr>
     <tr>
         <td>
-            <p>Студент НГУ*?</p>
+            <p>Студент НГУ?*</p>
         </td>
         <td>
             <input type="radio" value="1" name="isStudent" required>да
@@ -45,7 +60,7 @@
         </td>
     </tr>
 </table>
-<table width="354">
+<table>
     <tr>
         <td><p>Бывал в горах?</p></td>
         <td><p>Что умеешь?<p></td>
@@ -62,7 +77,7 @@
                 <input type="checkbox" name="climbingFees" value="true">на альпсборах<br>
             </label>
             <label>
-                <input type="checkbox" name="amateur" value="true">неспортивный маршрут<br>
+                <input type="checkbox" name="amateur" value="true">отдыхал на базе...<br>
             </label>
         </td>
         <td>
@@ -81,14 +96,15 @@
         </td>
     </tr>
 </table>
-<p>В какой район пойдешь?</p>
+    <p><a href="index.html" title="Ознакомиться с планами на осень"> Куда</a> ты хочешь?* </p>
 <select name="trackName" required>
     <option value="">Выбери...</option>
-    <option value="unselected">В любой</option>
-    <option value="2 к.с., осень, Картунский хребет">2 к.с., осень, Катунский хребет</option>
-    <option value="3 к.с., осень, Заилийский Ала-тау">3 к.с., осень, Заилийский Ала-тау</option>
+    <option value="unselected">Куда возьмете</option>
+    <option value="1 к.с., осень, Картунский хребет">В "единичку" на Катунский хребет</option>
+    <option value="2 к.с., осень, Заилийский Ала-тау">В "двойку" на Заилийский Ала-тау</option>
 </select>
-<p>С вероятностью:</p>
+
+<p>Уверен?*</p>
 <select name="probability" required>
     <option value="">Уточни...</option>
     <option value="30-"><30%</option>
@@ -106,18 +122,20 @@
     <option value="helmet">Каска</option>
     <option value="icePick">Ледоруб</option>
 </select>
-<p>Расскажи о себе:</p>
-<textarea rows="5" cols="45" name="text" placeholder="Играю на гитаре, вышиваю крестиком..."></textarea>
-<table width="354">
+<p>Что еще имеешь сказать?</p>
+<!-- не успел разобраться, как настроить стиль для textarea в файле css-->
+<textarea name="text" style="width:349px; height:100px; resize: none" placeholder="Играю на гитаре, вышиваю крестиком..."></textarea>
+<table>
     <tr>
         <td>
-            <input type="reset" name="reset" value="Затереть">
+            <button type="reset" name="reset">Заново...</button>
         </td>
         <td align="right">
-            <input type="submit" name="submit" value="Рискнуть!">
+            <button type="submit" name="submit">Рискнуть!</button>
         </td>
     </tr>
 </table>
 </form>
+</div>
 </body>
 </html>
