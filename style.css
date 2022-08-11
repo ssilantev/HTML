@@ -21,11 +21,9 @@ h3{
     color: rgb(50, 50, 120);
     font-style: italic;
 }
-
 h5{
     color: #AA0000;
 }
-
 p{
     font-family: arial;
     color: rgb(50, 50, 120);
@@ -42,14 +40,6 @@ table {
     font-size: 12px;
     font-style: italic;
     font-family: math;
-}
-
-.checkbox-other {
-    display: block;
-    margin: 0 0 10px 0;
-    cursor: pointer;
-    user-select: none;
-    position: relative;
 }
 button[type=reset] {
   background-color: #333333;
