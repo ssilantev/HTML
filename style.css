@@ -2,11 +2,25 @@
     max-width: 356px;
     margin: auto;
 }
+.contentNews{
+    max-width: 700px;
+    margin: auto;
+}
+
 h1{
     font-family: tahoma;
     font-size: 43px;
     color: rgb(50, 50, 120);
-    }
+}
+h2{
+    font-family: tahoma;
+    color: rgb(50, 50, 120);
+}
+h3{
+    font-family: tahoma;
+    color: rgb(50, 50, 120);
+    font-style: italic;
+}
 
 h5{
     color: #AA0000;
